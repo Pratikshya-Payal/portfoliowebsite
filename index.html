@@ -1,0 +1,104 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pratikshya Pramanik | Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">Portfolio</div>
+        <nav class="site-nav">
+            <a href="#home">Home <span>🏠</span></a>
+            <a href="#about">About Me <span>👤</span></a>
+            <a href="#skills">Skills <span>&lt;/&gt;</span></a>
+            <a href="#projects">Projects <span>🔗</span></a>
+            <a href="#contact">Contact <span>🚀</span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-copy">
+                <p class="intro">Hi, I'm</p>
+                <h1>Pratikshya Pramanik</h1>
+                <p class="hero-text">Computer Science student building modern websites and clean digital experiences.</p>
+                <a class="button" href="#projects">View Projects</a>
+            </div>
+            <div class="hero-image">
+                <img src="{% static 'images/paspot image pratikshya.jpeg' %}" alt="Profile photo of Pratikshya" />
+            </div>
+        </section>
+
+        <section id="about" class="section about-section">
+            <div class="about-image">
+                <img src="{% static 'images/html-css-collage-concept-with-person_23-2150062008.avif' %}" alt="About illustration" />
+            </div>
+            <div class="about-copy">
+                <h2>Pratikshya Pramanik</h2>
+                <p>My name is Pratikshya Pramanik. I am a B.Tech student at GITA College in Computer Science & Engineering. I love learning new techniques and technologies, and I enjoy creating software that makes ideas real.</p>
+                <a class="button outline" href="#contact">Hire Me</a>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills-section">
+            <h2>Skills</h2>
+            <div class="skill-list">
+                <div class="skill-row"><span>Core Java</span><span>60%</span></div>
+                <div class="skill-bar"><span class="fill java"></span></div>
+                <div class="skill-row"><span>HTML</span><span>80%</span></div>
+                <div class="skill-bar"><span class="fill html"></span></div>
+                <div class="skill-row"><span>CSS</span><span>80%</span></div>
+                <div class="skill-bar"><span class="fill css"></span></div>
+                <div class="skill-row"><span>JavaScript</span><span>85%</span></div>
+                <div class="skill-bar"><span class="fill js"></span></div>
+                <div class="skill-row"><span>Python</span><span>100%</span></div>
+                <div class="skill-bar"><span class="fill python"></span></div>
+                <div class="skill-row"><span>MySQL</span><span>90%</span></div>
+                <div class="skill-bar"><span class="fill mysql"></span></div>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects-section">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <img src="{% static 'images/Preview.jpg' %}" alt="Amazone clone project" />
+                    <h3>Amazone-clone</h3>
+                    <p>This project is a functional shopping app inspired by Amazon, built with React style and cloud features.</p>
+                    <div class="project-links">
+                        <a href="#" class="button outline">GitHub</a>
+                        <a href="#" class="button outline disabled">Live Link</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="{% static 'images/graphic-design-contest-a-way-to-build-your-design-portfolio.jpg' %}" alt="Portfolio project illustration" />
+                    <h3>My Portfolio</h3>
+                    <p>A modern portfolio website made with HTML, CSS, and JavaScript to showcase skills, projects, and contact details.</p>
+                    <div class="project-links">
+                        <a href="#" class="button outline">GitHub</a>
+                        <a href="#" class="button outline disabled">Live Link</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact-section">
+            <h2>Contact Me</h2>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Enter Your Name" />
+                <input type="email" name="email" placeholder="Enter Your Email" />
+                <input type="tel" name="phone" placeholder="Enter Your Phone" />
+                <textarea name="message" rows="6" placeholder="Enter Message"></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© All Rights Reserved | GITA STUDENT</p>
+    </footer>
+</body>
+</html>
